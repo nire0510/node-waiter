@@ -23,7 +23,7 @@ const waiter = require('node-waiter');
  */
 function doWhat() {
   return new Promise((resolve, reject) => {
-    window.setTimeout(function () {
+    setTimeout(function () {
       resolve(Math.random() > 0.8);
     }, 1000);
   });
@@ -39,5 +39,5 @@ function untilWhen(data) {
 
 waiter
   .waitUntil(doWhat, untilWhen)
-  .then(isTrue => 'Condition finally met!');
+  .then(isTrue => console.log('Condition finally met!'));
 ```

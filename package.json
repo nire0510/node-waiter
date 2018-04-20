@@ -1,6 +1,6 @@
 {
   "name": "node-waiter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Helper functions which make your code wait",
   "main": "index.js",
   "scripts": {
